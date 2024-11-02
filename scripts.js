@@ -1,5 +1,3 @@
-// JavaScript to capture and store form data in localStorage
-
 let projects = [];
 
 // Function to add a project to the projects array
@@ -11,6 +9,7 @@ function addProject() {
         projects.push({ name: projectName, description: projectDescription });
         document.getElementById("projectNameInput").value = "";
         document.getElementById("projectDescriptionInput").value = "";
+        console.log("Project added:", projectName, projectDescription);
     } else {
         alert("Please fill in both project name and description.");
     }
@@ -18,7 +17,6 @@ function addProject() {
 
 // Function to generate the portfolio and store data in localStorage
 function generatePortfolio() {
-    // Collect data from the form
     const aboutText = document.getElementById("aboutInput").value;
     const achievementsText = document.getElementById("achievementsInput").value;
     const emailText = document.getElementById("emailInput").value;
@@ -33,6 +31,9 @@ function generatePortfolio() {
     localStorage.setItem("githubText", githubText);
     localStorage.setItem("projects", JSON.stringify(projects));
 
+    console.log("Data saved to localStorage");
+    console.log("Redirecting to portfolio page...");
+    
     // Redirect to portfolio page
     window.location.href = "portfolio.html";
 }
