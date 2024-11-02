@@ -7,34 +7,35 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Create Your Portfolio</h1>
-    <form id="portfolioForm">
-        <label for="aboutInput">About Me:</label>
-        <textarea id="aboutInput" placeholder="Write about yourself"></textarea>
-        
-        <label for="projectNameInput">Project Name:</label>
-        <input type="text" id="projectNameInput" placeholder="Enter project name">
-        
-        <label for="projectDescriptionInput">Project Description:</label>
-        <textarea id="projectDescriptionInput" placeholder="Enter project description"></textarea>
-        
-        <button type="button" onclick="addProject()">Add Project</button>
-        
-        <label for="achievementsInput">Achievements:</label>
-        <textarea id="achievementsInput" placeholder="List your achievements"></textarea>
-        
-        <label for="emailInput">Email:</label>
-        <input type="email" id="emailInput" placeholder="Your email">
-        
-        <label for="linkedinInput">LinkedIn Profile URL:</label>
-        <input type="url" id="linkedinInput" placeholder="Your LinkedIn profile link">
-        
-        <label for="githubInput">GitHub Profile URL:</label>
-        <input type="url" id="githubInput" placeholder="Your GitHub profile link">
-        
-        <button type="button" onclick="generatePortfolio()">Generate Portfolio</button>
-    </form>
-
+    <div class="container">
+        <h1>Create Your Portfolio</h1>
+        <form id="portfolioForm">
+            <label for="aboutInput">About Me:</label>
+            <textarea id="aboutInput" placeholder="Write about yourself"></textarea>
+            
+            <label for="projectNameInput">Project Name:</label>
+            <input type="text" id="projectNameInput" placeholder="Enter project name">
+            
+            <label for="projectDescriptionInput">Project Description:</label>
+            <textarea id="projectDescriptionInput" placeholder="Enter project description"></textarea>
+            
+            <button type="button" onclick="addProject()">Add Project</button>
+            
+            <label for="achievementsInput">Achievements:</label>
+            <textarea id="achievementsInput" placeholder="List your achievements"></textarea>
+            
+            <label for="emailInput">Email:</label>
+            <input type="email" id="emailInput" placeholder="Your email">
+            
+            <label for="linkedinInput">LinkedIn Profile URL:</label>
+            <input type="url" id="linkedinInput" placeholder="Your LinkedIn profile link">
+            
+            <label for="githubInput">GitHub Profile URL:</label>
+            <input type="url" id="githubInput" placeholder="Your GitHub profile link">
+            
+            <button type="button" onclick="generatePortfolio()">Generate Portfolio</button>
+        </form>
+    </div>
     <script src="scripts.js"></script>
 </body>
 </html>
