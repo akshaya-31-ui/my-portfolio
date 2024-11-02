@@ -2,7 +2,7 @@
 
 let projects = [];
 
-// Function to add project
+// Function to add a project to the projects array
 function addProject() {
     const projectName = document.getElementById("projectNameInput").value;
     const projectDescription = document.getElementById("projectDescriptionInput").value;
@@ -16,7 +16,7 @@ function addProject() {
     }
 }
 
-// Function to generate portfolio and store data in localStorage
+// Function to generate the portfolio and store data in localStorage
 function generatePortfolio() {
     // Collect data from the form
     const aboutText = document.getElementById("aboutInput").value;
